@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f7f1ec">
+  <meta name="description" content="Un álbum de recuerdos hecho con cariño.">
+  <title>Para ti ❤️</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero-photo"><img id="coverImage" src="images/page-01.jpg" alt="Un recuerdo nuestro"></div>
+      <div class="hero-copy">
+        <p class="eyebrow" id="eyebrow"></p>
+        <h1 id="title"></h1>
+        <p id="intro"></p>
+        <a class="start" href="#letter">Abrir nuestro álbum <span aria-hidden="true">↓</span></a>
+      </div>
+      <span class="side-note" aria-hidden="true">para ti, amor</span>
+    </section>
+
+    <section class="letter paper" id="letter">
+      <p class="eyebrow">UNA CARTA PARA TI</p>
+      <h2 id="letterTitle"></h2>
+      <p id="letterText"></p>
+      <span class="signature">Con amor, siempre ❤️</span>
+    </section>
+
+    <section class="letter paper dedication-letter" id="dedication">
+      <p class="eyebrow" id="dedicationEyebrow"></p>
+      <h2 id="dedicationTitle"></h2>
+      <p id="dedicationText"></p>
+      <span class="signature" id="dedicationSignature"></span>
+    </section>
+
+    <section class="memories" id="memories">
+      <div class="section-heading">
+        <p class="eyebrow" id="galleryEyebrow"></p>
+        <h2 id="galleryTitle"></h2>
+        <p class="subheading">Toca una foto para verla más grande.</p>
+      </div>
+      <div id="gallery" class="gallery"></div>
+    </section>
+
+    <section class="letter closing-note">
+      <p class="eyebrow">UNA COSA MÁS</p>
+      <h2 id="noteTitle"></h2>
+      <p id="noteText"></p>
+    </section>
+
+    <section class="ending">
+      <div class="ending-mark">♥</div>
+      <p class="eyebrow">ESTO SIGUE</p>
+      <h2 id="finalTitle"></h2>
+      <p id="finalText"></p>
+    </section>
+    <footer><span id="footerText"></span></footer>
+  </main>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Foto ampliada">
+    <button class="close" aria-label="Cerrar">×</button>
+    <button class="prev" aria-label="Foto anterior">‹</button>
+    <div class="lightbox-content"><img id="lightboxImage" src="" alt=""><p id="lightboxTitle"></p><span id="counter"></span></div>
+    <button class="next" aria-label="Foto siguiente">›</button>
+  </div>
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
